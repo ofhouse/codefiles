@@ -3,19 +3,32 @@
     "editor.fontSize": 13,
     "editor.rulers": [99],
     "editor.tabSize": 2,
-    "editor.wrappingColumn": 100,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
     "editor.formatOnType": true,
     "editor.cursorBlinking": "phase",
     "editor.renderIndentGuides": true,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
 
-// Window
+    // Window
     "window.reopenFolders": "all",
 
 
-// Files
+    // Files
     "files.autoSave": "onFocusChange",
     "git.confirmSync": false,
 
     // When enabled, will trim trailing whitespace when you save a file.
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+
+
+    // #######
+    // Plugins
+    // #######
+
+    // Prettier
+    "prettier.trailingComma": true,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 100
   }
