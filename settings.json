@@ -28,7 +28,7 @@
     // #######
 
     // Prettier
-    "prettier.trailingComma": true,
+    "prettier.trailingComma": "es5",
     "prettier.singleQuote": true,
     "prettier.printWidth": 100
-  }
+}
