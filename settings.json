@@ -34,5 +34,8 @@
     // Prettier
     "prettier.trailingComma": "es5",
     "prettier.singleQuote": true,
-    "prettier.printWidth": 100
+    "prettier.printWidth": 100,
+
+    // Project manager
+    "projectManager.openInNewWindowWhenClickingInStatusBar": true
 }
