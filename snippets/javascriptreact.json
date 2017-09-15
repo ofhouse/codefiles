@@ -4,27 +4,25 @@
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
-	// Example:
 	"Create new react component": {
-		"prefix": "reactcomponent",
+		"prefix": "reactComponent",
 		"body": [
 			"import React, { Component } from 'react';",
 			"",
-			"export default class $1 extends Component {",
+			"export default class ${1:ComponentName} extends Component {",
 			"  render() {",
-			"    return();",
+			"    return($0);",
 			"  }",
-			"}",
-			"$2"
+			"}"
 		],
 		"description": "React class template"
 	},
 
-	"Function binding": {
+	"Bind a function to this": {
 		"prefix": "bindthis",
 		"body": [
-			"this.$1 = this.$1.bind(this);",
-			"$2"
+			"this.${1:functionName} = this.$1.bind(this);",
+			"$0"
 		],
 		"description": "Class binding in react"
 	},
@@ -36,7 +34,7 @@
 			"  super(props);",
 			"",
 			"  this.state = {",
-			"    $1",
+			"    $0",
 			"  };",
 			"}"
 		],
