@@ -4,30 +4,29 @@
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
-	"Create new react component": {
+	"react.create.component": {
 		"prefix": "reactComponent",
 		"body": [
 			"import React, { Component } from 'react';",
 			"",
 			"export default class ${1:ComponentName} extends Component {",
 			"  render() {",
-			"    return($0);",
+			"    return(<div>$0</div>);",
 			"  }",
 			"}"
 		],
 		"description": "React class template"
 	},
 
-	"Bind a function to this": {
-		"prefix": "bindthis",
+	"react.bind.this": {
+		"prefix": "bindThis",
 		"body": [
-			"this.${1:functionName} = this.$1.bind(this);",
-			"$0"
+			"this.${1:functionName} = this.$1.bind(this);$0"
 		],
 		"description": "Class binding in react"
 	},
 
-	"Import Module": {
+	"react.constructor": {
 		"prefix": "reactConstructor",
 		"body": [
 			"constructor(props) {",
@@ -39,6 +38,56 @@
 			"}"
 		],
 		"description": "Adds a react component constructor"
-	}
+	},
 
+	// Redux
+	"redux.connect": {
+		"prefix": "reduxConnect",
+		"body": [
+			"import { connect } from 'react-redux';",
+			"$0"
+		],
+		"description": "Import connect from react-redux module"
+	},
+
+	"redux.reducer": {
+		"prefix": "reduxReducer",
+		"body": [
+			"const initialState = {};",
+			"",
+			"export default function reducer(state = initialState, action) {",
+			"  switch (action.type) {",
+			"    case ${1:ACTION_TYPE}: {",
+			"      return {",
+			"        ...state,",
+			"      }",
+			"    }",
+			"  }",
+			"",
+			"  return state;",
+			"}",
+			"$0"
+		],
+		"description": "Creates a template for a redux reducer"
+	},
+
+	// Styled components
+	"styled.import": {
+		"prefix": "styledImport",
+		"body": [
+			"import styled from 'styled-components';",
+			"$0"
+		],
+		"description": "Import styled components module"
+	},
+
+	"styled.div": {
+		"prefix": "styledDiv",
+		"body": [
+			"const ${1:ComponentName} = styled.div`",
+			"  $0",
+			"`;"
+		],
+		"description": "Adds a new styled component"
+	}
 }
