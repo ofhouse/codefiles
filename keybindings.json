@@ -1,5 +1,13 @@
-// Place your key bindings in this file to overwrite the defaults
 [
-  { "key": "shift+cmd+A",           "command": "editor.action.sortLinesAscending",
-                                     "when": "editorTextFocus" }
+  // Place your key bindings in this file to overwrite the defaults
+  {
+    "key": "shift+cmd+A",
+    "command": "editor.action.sortLinesAscending",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+oem_minus",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  }
 ]
