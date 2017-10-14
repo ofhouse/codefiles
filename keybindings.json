@@ -1,7 +1,7 @@
 [
   // Place your key bindings in this file to overwrite the defaults
   {
-    "key": "shift+cmd+A",
+    "key": "ctrl+shift+a",
     "command": "editor.action.sortLinesAscending",
     "when": "editorTextFocus"
   },
@@ -9,5 +9,18 @@
     "key": "ctrl+oem_minus",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+[BracketRight]",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },{
+    "key": "ctrl+tab",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
   }
 ]
