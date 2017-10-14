@@ -11,16 +11,12 @@
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": false,
 
-    // Window
-    "window.reopenFolders": "all",
-
-
     // Files
     "files.autoSave": "onFocusChange",
-    "git.confirmSync": false,
+    "files.trimTrailingWhitespace": true, // When enabled, will trim trailing whitespace when you save a file.
+    "files.eol": "\n",
 
-    // When enabled, will trim trailing whitespace when you save a file.
-    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
 
     "emmet.syntaxProfiles": {
         "javascript": "html",
