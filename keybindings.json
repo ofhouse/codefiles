@@ -36,6 +36,11 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
+    "key": "ctrl+tab",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
     "key": "cmd+n",
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
