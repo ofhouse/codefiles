@@ -4,12 +4,48 @@
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
+
+	// Comments
+	"comments.header": {
+		"prefix": "commHeader",
+		"body": [
+			"/**",
+			" * $1",
+			" *",
+			" * @flow",
+			" */",
+			"",
+			"$0"
+		],
+		"description": "Adds a header comment."
+	},
+
+	// Arrays
+	"array.slice": {
+		"prefix": "arraySlice",
+		"body": [
+			"[",
+		  "  ...${1:array}.slice(0, ${2:index}),",
+			"    {",
+			"      ...${3:updatedItem}",
+			"    },",
+			"  ...$1.slice($2 + 1),",
+			"]$0"
+		],
+		"description": "Update an element in an array with spread-syntax."
+	},
+
+	// React
 	"react.create.component": {
 		"prefix": "reactComponent",
 		"body": [
-			"import React, { Component } from 'react';",
+			"import * as React from 'react';",
 			"",
-			"export default class ${1:ComponentName} extends Component {",
+			"type Props = {",
+			"  ${1:propName}",
+			"};",
+			"",
+			"export default class ${2:ComponentName} extends React.Component<Props> {",
 			"  render() {",
 			"    return(<div>$0</div>);",
 			"  }",
@@ -23,7 +59,11 @@
 		"body": [
 			"import * as React from 'react';",
 			"",
-			"export default function ${1:ComponentName}(props) {",
+			"type Props = {",
+			"  ${1:propName}",
+			"};",
+			"",
+			"export default function ${2:ComponentName}(props: Props) {",
 			"  return(<div>$0</div>);",
 			"}"
 		],
