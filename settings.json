@@ -33,5 +33,23 @@
     "prettier.printWidth": 100,
 
     // Project manager
-    "projectManager.openInNewWindowWhenClickingInStatusBar": true
+    "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+    "workbench.panel.location": "bottom",
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.keymap": "chorded",
+    "gitlens.historyExplorer.enabled": true,
+    "workbench.colorTheme": "Visual Studio Dark"
 }
