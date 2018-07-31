@@ -32,6 +32,10 @@
     "prettier.singleQuote": true,
     "prettier.printWidth": 100,
 
-    // Project manager
-    "projectManager.openInNewWindowWhenClickingInStatusBar": true
+    // GitLens
+    "gitlens.keymap": "chorded",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true
 }
