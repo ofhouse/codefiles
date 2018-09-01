@@ -22,5 +22,23 @@
     "key": "ctrl+tab",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
+  },
+
+  // console.log snippet
+  {
+    "key": "ctrl+shift+c",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && resourceLangId == javascriptreact",
+    "args": {
+      "snippet": "console.log(${1:}$SELECTION);${0}"
+    }
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && resourceLangId == javascript",
+    "args": {
+      "snippet": "console.log(${1:}$SELECTION);${0}"
+    }
   }
 ]
