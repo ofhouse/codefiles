@@ -1,0 +1,33 @@
+{
+	"react.create.component": {
+		"prefix": "reactComponent",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"interface Props {",
+			"  ${3}",
+			"};",
+			"",
+			"export default class ${1:${TM_FILENAME_BASE/^(.)|-(.)/${1:/upcase}${2:/upcase}/gm}} extends React.Component<Props, {}> {",
+			"  render() {",
+			"    return ${2:null};$0",
+			"  }",
+			"}"
+		],
+		"description": "React component template"
+	},
+
+	"react.create.component.function": {
+		"prefix": "reactComponentFunct",
+		"body": [
+			"import * as React from 'react';",
+			"",
+			"const ${1:${TM_FILENAME_BASE/^(.)|-(.)/${1:/upcase}${2:/upcase}/gm}} : React.StatelessComponent<{}> = () => (",
+			"  ${0:null}",
+			");",
+			"",
+			"export default ${1};"
+		],
+		"description": "React component template (as function)"
+	},
+}

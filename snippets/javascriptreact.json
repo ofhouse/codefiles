@@ -36,66 +36,6 @@
 	},
 
 	// React
-	"react.lifecycle.componentDidMount": {
-		"prefix": "componentDidMount",
-		"body": [
-			"componentDidMount() {",
-			"  $0",
-			"}"
-		],
-		"description": "Template for lifecycle method componentDidMount"
-	},
-
-	"react.lifecycle.componentWillUnmount": {
-		"prefix": "componentWillUnmount",
-		"body": [
-			"componentWillUnmount() {",
-			"  $0",
-			"}"
-		],
-		"description": "Template for lifecycle method componentWillUnmount"
-	},
-
-	"react.lifecycle.componentWillReceiveProps": {
-		"prefix": "componentWillReceiveProps",
-		"body": [
-			"componentWillReceiveProps(nextProps) {",
-			"  $0",
-			"}"
-		],
-		"description": "Template for lifecycle method componentWillReceiveProps"
-	},
-
-	"react.lifecycle.shouldComponentUpdate": {
-		"prefix": "shouldComponentUpdate",
-		"body": [
-			"shouldComponentUpdate(nextProps, nextState) {",
-			"  $0",
-			"}"
-		],
-		"description": "Template for lifecycle method shouldComponentUpdate"
-	},
-
-	"react.lifecycle.componentWillUpdate": {
-		"prefix": "componentWillUpdate",
-		"body": [
-			"componentWillUpdate(nextProps, nextState) {",
-			"  $0",
-			"}"
-		],
-		"description": "Template for lifecycle method componentWillUpdate"
-	},
-
-	"react.lifecycle.componentDidUpdate": {
-		"prefix": "componentDidUpdate",
-		"body": [
-			"componentDidUpdate(prevProps, prevState) {",
-			"  $0",
-			"}"
-		],
-		"description": "Template for lifecycle method componentDidUpdate"
-	},
-
 	"react.create.component": {
 		"prefix": "reactComponent",
 		"body": [
@@ -130,14 +70,6 @@
 			"export default ${1};"
 		],
 		"description": "React component template (as function)"
-	},
-
-	"react.bind.this": {
-		"prefix": "bindThis",
-		"body": [
-			"this.${1:functionName} = this.$1.bind(this);$0"
-		],
-		"description": "Class binding in react"
 	},
 
 	"react.constructor": {
