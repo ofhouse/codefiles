@@ -7,6 +7,7 @@
     "editor.wordWrapColumn": 100,
     "editor.formatOnType": true,
     "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
     "editor.renderIndentGuides": true,
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": false,
@@ -23,6 +24,10 @@
         "javascriptreact": "jsx"
     },
 
+    // Explorer
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 0,
+
     // #######
     // Plugins
     // #######
@@ -37,5 +42,6 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
-    "gitlens.historyExplorer.enabled": true
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true
 }
