@@ -2,7 +2,7 @@
 	"react.create.component": {
 		"prefix": "reactComponent",
 		"body": [
-			"import * as React from 'react';",
+			"import React from 'react';",
 			"",
 			"interface Props {",
 			"  ${3}",
@@ -20,14 +20,32 @@
 	"react.create.component.function": {
 		"prefix": "reactComponentFunct",
 		"body": [
-			"import * as React from 'react';",
+			"import React from 'react';",
 			"",
-			"const ${1:${TM_FILENAME_BASE/^(.)|-(.)/${1:/upcase}${2:/upcase}/gm}} : React.StatelessComponent<{}> = () => (",
+			"const ${1:${TM_FILENAME_BASE/^(.)|-(.)/${1:/upcase}${2:/upcase}/gm}} : React.FC = () => (",
 			"  ${0:null}",
 			");",
 			"",
 			"export default ${1};"
 		],
 		"description": "React component template (as function)"
+	},
+
+	"react.create.component.function.interface": {
+		"prefix": "reactComponentFunctInterface",
+		"body": [
+			"import React from 'react';",
+			"",
+			"interface Props {",
+			"  ${2}",
+			"};",
+			"",
+			"const ${1:${TM_FILENAME_BASE/^(.)|-(.)/${1:/upcase}${2:/upcase}/gm}} : React.FC<Props> = () => (",
+			"  ${0:null}",
+			");",
+			"",
+			"export default ${1};"
+		],
+		"description": "React component template (as function with interface)"
 	},
 }
