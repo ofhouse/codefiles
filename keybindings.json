@@ -26,7 +26,7 @@
   {
     "key": "ctrl+shift+x",
     "command": "workbench.action.tasks.runTask"
-  }
+  },
 
   // console.log snippet
   {
@@ -41,6 +41,22 @@
     "key": "ctrl+shift+c",
     "command": "editor.action.insertSnippet",
     "when": "editorTextFocus && !editorReadonly && resourceLangId == javascript",
+    "args": {
+      "snippet": "console.log(${1:}$SELECTION)${0}"
+    }
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && resourceLangId == typescriptreact",
+    "args": {
+      "snippet": "console.log(${1:}$SELECTION)${0}"
+    }
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && resourceLangId == typescript",
     "args": {
       "snippet": "console.log(${1:}$SELECTION)${0}"
     }
