@@ -12,8 +12,7 @@
     "editor.minimap.renderCharacters": false,
 
     // Files
-    "files.autoSave": "onFocusChange",
-    "files.trimTrailingWhitespace": true, // When enabled, will trim trailing whitespace when you save a file.
+    "files.autoSave": "onFocusChange", // When enabled, will trim trailing whitespace when you save a file.
     "files.eol": "\n",
 
     "git.confirmSync": false,
@@ -23,19 +22,22 @@
         "javascriptreact": "jsx"
     },
 
+    "terminal.integrated.scrollback": 10000,
+
+
     // #######
     // Plugins
     // #######
 
+
     // Prettier
-    "prettier.trailingComma": "es5",
     "prettier.singleQuote": true,
-    "prettier.printWidth": 100,
+
+    // Live-share
+    "liveshare.anonymousGuestApproval":"accept",
+    "liveshare.connectionMode": "direct",
 
     // Project manager
-    "projectManager.openInNewWindowWhenClickingInStatusBar": true,
-    "workbench.panel.location": "bottom",
-    "window.zoomLevel": 0,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -50,6 +52,34 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.keymap": "chorded",
-    "gitlens.historyExplorer.enabled": true,
-    "workbench.colorTheme": "Visual Studio Dark"
+    "git.autofetch": true,
+    "breadcrumbs.enabled": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "explorer.confirmDragAndDrop": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.rendererType": "dom",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
 }
